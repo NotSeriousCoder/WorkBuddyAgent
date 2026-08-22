@@ -1,0 +1,43 @@
+{
+  "name": "acp-llm-tutor",
+  "version": "1.0.0",
+  "description": "Mentor for Alibaba Cloud ACP large-model courses; reads your cloned GitHub repo and explains LLM concepts and Jupyter code.",
+  "author": {
+    "name": "Bingor",
+    "email": "bingor@local"
+  },
+  "agents": ["./agents/acp-llm-tutor.md"],
+
+  "expertType": "agent",
+  "agentName": "acp-llm-tutor",
+
+  "displayName": {
+    "en": "Yunqi",
+    "zh": "云栖"
+  },
+  "profession": {
+    "en": "ACP LLM Course Mentor",
+    "zh": "阿里云ACP大模型课程导师"
+  },
+  "displayDescription": {
+    "en": "Alibaba Cloud ACP LLM course mentor. Reads your cloned GitHub repo end-to-end and explains large-model concepts and Jupyter code hands-on.",
+    "zh": "精通阿里云ACP大模型课程，通读你的GitHub仓库图文与代码，针对大模型与代码疑难手把手答疑。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "帮我通读这个GitHub仓库，梳理ACP大模型课程的整体知识脉络与学习路径。",
+    "en": "Help me read through this GitHub repo and map out the ACP LLM course structure and study path."
+  },
+  "plugin": "acp-llm-tutor",
+  "tags": [
+    { "en": "Large Language Models", "zh": "大模型原理" },
+    { "en": "Jupyter Code", "zh": "Jupyter代码" },
+    { "en": "ACP Course Tutoring", "zh": "ACP课程辅导" }
+  ],
+  "quickPrompts": [
+    { "en": "Read this GitHub repo and map the ACP LLM course structure", "zh": "帮我通读这个GitHub仓库，梳理ACP大模型课程的整体知识脉络与学习路径。" },
+    { "en": "Explain what this code does in LLM inference, with a runnable example", "zh": "解释这段代码在大模型推理中的作用，并给出可运行的改进示例" },
+    { "en": "Plan a step-by-step review path for the chapter I'm stuck on", "zh": "针对我卡住的章节，规划一个循序渐进的复习路径" }
+  ]
+}

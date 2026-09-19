@@ -1,0 +1,5 @@
+# 会话原始文件必须保持字节原样：禁止换行符自动转换，
+# 否则在其他电脑克隆后文件被改写，可能影响 WorkBuddy 会话的恢复。
+*.jsonl -text
+*.ndjson -text
+*.meta.json -text
